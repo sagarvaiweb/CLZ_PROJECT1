@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="1200" height="400" role="img" aria-labelledby="titleDesc">
+  <title id="titleDesc">Roomly — Find your perfect stay</title>
+  <defs>
+    <linearGradient id="g1" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#0E76FF"></stop>
+      <stop offset="1" stop-color="#2BB0FF"></stop>
+    </linearGradient>
+    <style>
+      .word { font-family: 'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; font-weight: 600; font-size: 160px; fill: #0B2436; }
+      .icon-fill { fill: url(#g1); }
+    </style>
+  </defs>
+
+  <!-- Icon (left): rounded room with stylized door + subtle "R" suggestion -->
+  <g transform="translate(80,40)">
+    <!-- rounded frame -->
+    <rect x="0" y="0" width="240" height="240" rx="36" class="icon-fill"></rect>
+    <!-- inner inset to create frame effect -->
+    <rect x="22" y="22" width="196" height="196" rx="18" fill="#fff"></rect>
+    <!-- door shape (dark) -->
+    <rect x="120" y="44" width="46" height="144" rx="6" fill="url(#g1)"></rect>
+    <!-- door knob -->
+    <circle cx="154" cy="116" r="7" fill="#fff"></circle>
+    <!-- subtle R leg cutout (white) to hint the 'R' without full letter -->
+    <path d="M48 196c24-28 42-66 88-66" fill="none" stroke="#fff" stroke-width="20" stroke-linecap="round"></path>
+  </g>
+
+  <!-- Wordmark (right) -->
+  <text x="380" y="190" class="word">Roomly</text>
+</svg>
