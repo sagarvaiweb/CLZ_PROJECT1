@@ -1,3 +1,5 @@
+ /* css for Navbar  */
+
 .Roomly_icon{
     height:5rem; 
 }
@@ -6,4 +8,124 @@
 }
 .search_input{
     padding: 0.5rem 1.5rem;
+}
+
+
+/* css for singupPage */
+
+
+/* Remove the full-screen body layout */
+
+
+
+.signupPage {
+  width: 100%;
+  background: #e6eaef;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;        /* space from navbar & footer */
+}
+
+/* Wider Card */
+.card {
+  width: 420px;
+  padding: 45px;
+  background: #f2f4f7;
+  border-radius: 22px;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.17);
+  text-align: center;
+  margin: 20px 0; /* add breathing space */
+}
+
+.title {
+  font-size: 23px;
+  margin-bottom: 12px;
+  color: #222;
+}
+
+/* Input Box Wrapper */
+.input-box {
+  position: relative;
+  margin: 16px 0;
+}
+
+/* Icons inside input */
+.icon {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 17px;
+  color: #666;
+}
+
+/* Input Field */
+.input-box input {
+  width: 100%;
+  padding: 15px 20px 15px 50px;
+  font-size: 16px;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+
+  background: linear-gradient(145deg, #ffffff, #e6e6e6);
+  box-shadow: inset 4px 4px 6px rgba(0, 0, 0, 0.18),
+              inset -4px -4px 6px rgba(255, 255, 255, 0.9);
+}
+
+/* Password Show/Hide Icon */
+.eye-icon {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 17px;
+  color: #666;
+  cursor: pointer;
+}
+
+/* Button */
+.btn-form {
+  width: 100%;
+  padding: 14px;
+  font-size: 17px;
+  color: white;
+  background: #00aaff;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+
+  box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.3),
+              -3px -3px 8px rgba(255, 255, 255, 0.8);
+}
+
+.btn:hover {
+  background: #0090e0;
+}
+
+/* Terms & Policies */
+.subtext {
+  margin-top: 12px;
+  font-size: 13px;
+  color: #555;
+  line-height: 1.4;
+}
+
+.subtext a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+/* Login Link */
+.links {
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+.links a,
+.login-link {
+  color: #007bff;
+  text-decoration: none;
+  cursor: pointer;
 }

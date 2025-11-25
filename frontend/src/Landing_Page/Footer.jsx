@@ -9,14 +9,14 @@ function Footer() {
           {/* Column 1 - Brand / About */}
           <div className="col-md-3 mb-3 ">
             <img src="/roomly2.png" alt="roomly2_image" width={50} />
-            <p className="mt-2">Roomly - Smart space management made easy.</p>
+            <p className="mt-2">Roomly - Smart space management <br /> made  easy.</p>
             <p>&copy; 2025 Roomly. All rights reserved.</p>
           </div>
 
           {/* Column 2 - Navigation */}
           <div className="col-md-3 mb-3 ">
-            <h5>Quick Links</h5>
-            <ul className="list-unstyled">
+            <h5 className='ms-5'>Quick Links</h5>
+            <ul className="list-unstyled ms-5">
               <li><a href="#home" className="text-white text-decoration-none ">Home</a></li>
               <li><a href="#about" className="text-white text-decoration-none">About</a></li>
               <li><a href="#services" className="text-white text-decoration-none">Services</a></li>
@@ -33,7 +33,7 @@ function Footer() {
               <a href="#" className="text-white me-2"><i className="fab fa-facebook fs-4"></i></a>
               <a href="#" className="text-white me-2"><i className="fab fa-twitter fs-4"></i></a>
               <a href="#" className="text-white me-2"><i className="fab fa-instagram fs-4"></i></a>
-              <a href="#" className="text-white me-2"><i class="fa-brands fa-linkedin-in fs-4"></i></a>
+              <a href="#" className="text-white me-2"><i className="fa-brands fa-linkedin-in fs-4"></i></a>
             </div>
           </div>
 
