@@ -183,3 +183,27 @@ i.fa-solid {
 }
 
 
+
+/* css for supportPage  */
+
+.accordion-button {
+  font-weight: 500;
+}
+
+.shadow:hover {
+  transform: translateY(-5px);
+  transition: all 0.3s ease;
+}
+
+.card i.fa-solid {
+  margin-bottom: 10px;
+}
+
+.btn-primary:hover {
+  background-color: #0b5ed7;
+  transition: 0.3s;
+}
+
+
+
+
