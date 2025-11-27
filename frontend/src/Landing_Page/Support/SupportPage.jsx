@@ -1,7 +1,8 @@
 import React from 'react'
 
 function SupportPage() {
-    return ( <h1>iam SupportPage</h1> );
+  return ( <>
+  iam Supportpage</> );
 }
 
 export default SupportPage;
