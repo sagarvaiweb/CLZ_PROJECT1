@@ -1,0 +1,5 @@
+node_modules/
+.env
+
+# both should be written in separate line
+# after node_modules we have to give slash to indicate that git should ignore whole directory
