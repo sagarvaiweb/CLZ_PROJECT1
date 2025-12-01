@@ -6,8 +6,9 @@ const app = express();
 const mongoose = require("mongoose");
 const cors = require("cors");
 
-const {Listing} = require("./Modals/listingModal");
+const Listing = require("./Modals/listingModal");
 
+const sampleListings =require("./data1");
 
 const PORT = process.env.PORT || 3000 ;
 const URL = process.env.MONGO_URL ;
@@ -21,7 +22,40 @@ app.get("/",(req,res)=>{
     res.send("hellow iam sagar");
 })
 
-app.get()
+// just for adding dummy data to the database
+
+// app.post("/add" , async(req , res)=>{
+//     try{
+//         for(let item of sampleListings){
+//          let newListing = new Listing({
+//             title: item.title,
+//             description:item.description,
+//             image:{
+//                 filename:item.image.filename,
+//                 url:item.image.url,
+//             },
+//             price:item.price,
+
+//             location:item.location,
+//             country:item.country,
+//           })
+//          await newListing.save();
+//         }
+
+//         res.send("data saved sucessfuly");
+
+//     } catch(err){
+//         console.error(err);
+//     }
+    
+    
+
+// })
+
+app.get("/listings", async(req,res)=>{
+    let allListings = await Listing.find({ });
+    res.json(allListings);
+})
 
 
 

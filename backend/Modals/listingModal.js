@@ -16,9 +16,6 @@ const listingSchema = new Schema({
      price:{
         type:Number
      },
-     category:{
-        type:String
-     },
      location:{
         type:String
      },
