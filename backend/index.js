@@ -6,6 +6,8 @@ const app = express();
 const mongoose = require("mongoose");
 const cors = require("cors");
 
+const {Listing} = require("./Modals/listingModal");
+
 
 const PORT = process.env.PORT || 3000 ;
 const URL = process.env.MONGO_URL ;
@@ -18,6 +20,9 @@ app.use(express.urlencoded({extended:true}));
 app.get("/",(req,res)=>{
     res.send("hellow iam sagar");
 })
+
+app.get()
+
 
 
 mongoose.connect(URL).then(()=>{
