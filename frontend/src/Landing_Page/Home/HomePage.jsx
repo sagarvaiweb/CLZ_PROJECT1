@@ -1,11 +1,33 @@
 import React from 'react'
-import { sampleListings } from '../../data';
+import { useEffect } from 'react';
+import { useState } from 'react';
+import axios  from 'axios';
+
 
 function HomePage() {
+  const [allListings , setAllListings] = useState([]);
+
+ useEffect(()=>{
+    const fetchListings = async()=>{
+        try{
+        let res = await axios.get("http://localhost:3000/listings");
+        setAllListings(res.data);
+        }
+        catch(err){
+            console.error("listings is not fetched from database:", err);
+        }
+        
+    }
+
+    fetchListings();
+ })
+    
+    
+
     return ( <>
     <ul className='cardWrap'>
         {
-            sampleListings.map((listing , index)=>{       
+            allListings.map((listing , index)=>{       
          return (
         <li key={index}>
 
