@@ -1,6 +1,7 @@
 import React from 'react'
 import { useEffect } from 'react';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import axios  from 'axios';
 
 
@@ -20,7 +21,7 @@ function HomePage() {
     }
 
     fetchListings();
- })
+ } , [])
     
     
 
@@ -29,9 +30,9 @@ function HomePage() {
         {
             allListings.map((listing , index)=>{       
          return (
-        <li key={index}>
+        <li key={listing._id}>
 
-        <a href="" className='text-decoration-none'>
+        <Link to={`/listings/${listing._id}`} className='text-decoration-none'>
         <div className="card  card_top text-start  card-image-overlay " >
         <img src={listing.image.url} className="card-img-top"   alt="listing_image"/>
         <div className="card-body">
@@ -40,7 +41,7 @@ function HomePage() {
        
         </div>
         </div>
-        </a>
+        </Link>
                </li>)
 
             })

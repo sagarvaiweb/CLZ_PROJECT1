@@ -24,6 +24,7 @@ function App() {
       <Route path='/signup' element={<SignUpPage/>} />
       <Route path='/login' element={<LoginPage/>} />
       <Route path='/support' element={<SupportPage/>} />
+      <Route path='/listings/:id' element={<ShowPage/>} />
      </Routes>
     <Footer/>
         
