@@ -9,6 +9,7 @@ import ServicesPage from './Landing_Page/Services/ServicesPage'
 import SignUpPage from './Landing_Page/SignUp/SignUpPage'
 import LoginPage from './Landing_Page/Login/LoginPage'
 import SupportPage from './Landing_Page/Support/SupportPage'
+import ShowPage from './Landing_Page/Show/ShowPage'
 
 
 function App() {
