@@ -1,5 +1,6 @@
 import axios from 'axios';
 import { useState ,useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 
 
@@ -9,13 +10,16 @@ function NewListingPage() {
         setForm({...form , [e.target.name]:e.target.value}) ;
     }
 
+    let navigate = useNavigate();
+
     const handleSubmit = async(e)=>{
         e.preventDefault() ; // prevent page refresh
 
         try{
 
             let res = await axios.post("http://localhost:3000/listings/create" , form) ;
-            console.log("listing is created successfully", res.data);
+            console.log( res.message);
+            navigate("/");
         }
         catch(err){
             console.log("listing is not created:", err);
@@ -34,7 +38,7 @@ function NewListingPage() {
             </div>
              <div className="input_div">
                 <label htmlFor="description">Description</label>
-                <textarea className='new_listing_input'  type="text" id='description' name='descriptioin' placeholder='Provide some description' value={form.description}  onChange={handleInput} required />
+                <textarea className='new_listing_input'  type="text" id='description' name='description' placeholder='Provide some description' value={form.description}  onChange={handleInput} required />
             </div>
              <div className="input_div">
                 <label htmlFor="price">Price</label>

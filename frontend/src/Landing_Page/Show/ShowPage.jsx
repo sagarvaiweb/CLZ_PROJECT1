@@ -14,13 +14,14 @@ function ShowPage() {
             try{
                 
                 let res = await axios.get(`http://localhost:3000/listings/${id}`) ;
+                setListing(res.data);
                 console.log("listing is fetched successfully" , res.data);
             }
             catch(err){
                 console.log("listing is not fetched:", err);
             }
             
-            setListing(res.data);
+          
         }
 
         fetchListing();

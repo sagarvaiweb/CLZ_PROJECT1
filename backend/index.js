@@ -52,17 +52,29 @@ app.get("/",(req,res)=>{
 
 // })
 
+
+// get route for allListings
 app.get("/listings", async(req,res)=>{
     let allListings = await Listing.find({ });
     res.json(allListings);
 })
 
+// get route for particular route
 app.get("/listings/:id" , async(req , res)=>{
     const {id}= req.params ;
     let listing = await Listing.findById(id) ;
     res.json(listing);
 })
 
+// post route for creating new listing
+app.post("/listings/create" , async(req , res)=>{
+    const listingData = {...req.body} ;
+    const newListing = await Listing.create(listingData);
+    res.json({
+        success:true,
+        message:"listing created successfully"
+    })
+})
 
 mongoose.connect(URL).then(()=>{
     console.log("mongodb is connected");
