@@ -232,3 +232,45 @@ i.fa-solid {
   background-color: white ;
   opacity: 0.8;
 }
+
+
+/* css for showPage */
+
+.image_div{
+  height: 300px;
+  width:500px;
+  
+}
+
+.show_image{
+  width:100%;
+  height: 100%;
+}
+.btn_div{
+  width:200px;
+  display:flex;
+  justify-content: space-between;
+}
+.update_btn{
+  background-color:green;
+  color:white ;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: none;
+}
+.update_btn:hover{
+  background-color: rgb(64, 152, 64);
+  color:white;
+}
+
+.delete_btn{
+  background-color: red;
+  color:white ;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: none;
+}
+.delete_btn:hover{
+  background-color: rgb(166, 41, 41);
+  color:white;
+}

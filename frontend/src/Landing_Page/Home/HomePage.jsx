@@ -37,7 +37,7 @@ function HomePage() {
         <img src={listing.image.url} className="card-img-top"   alt="listing_image"/>
         <div className="card-body">
         <h5 className="card-title">{listing.title}</h5>
-        <p className="card-text">{listing.price}/night</p>
+        <p className="card-text">&#8377;{listing.price}/night</p>
        
         </div>
         </div>
