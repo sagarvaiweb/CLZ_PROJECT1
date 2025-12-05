@@ -11,6 +11,7 @@ import LoginPage from './Landing_Page/Login/LoginPage'
 import SupportPage from './Landing_Page/Support/SupportPage'
 import ShowPage from './Landing_Page/Show/ShowPage'
 import NewListingPage from './Landing_Page/NewListing/NewListingPage'
+import EditPage from './Landing_Page/Edit/EditPage'
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
       <Route path='/support' element={<SupportPage/>} />
       <Route path='/listings/:id' element={<ShowPage/>} />
       <Route path='/newlisting'  element={<NewListingPage/>}/>
+      <Route path='/listings/:id/edit' element={<EditPage/>} />
      </Routes>
     <Footer/>
         

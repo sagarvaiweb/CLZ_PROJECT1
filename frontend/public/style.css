@@ -257,6 +257,7 @@ i.fa-solid {
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
   border: none;
+  text-decoration: none;
 }
 .update_btn:hover{
   background-color: rgb(64, 152, 64);
@@ -269,6 +270,7 @@ i.fa-solid {
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
   border: none;
+  text-decoration: none;
 }
 .delete_btn:hover{
   background-color: rgb(166, 41, 41);

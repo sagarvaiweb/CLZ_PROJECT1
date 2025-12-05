@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState , useEffect } from 'react';
 import { useParams } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import axios from 'axios';
 
 
@@ -44,8 +45,8 @@ function ShowPage() {
             </div>
 
             <div className="btn_div mb-5 mt-5">
-                <button className='update_btn'>Update</button>
-                <button className='delete_btn'>Delete</button>
+                <Link to={`/listings/${listing._id}/edit`} className='update_btn'>Update</Link>
+                <Link className='delete_btn'>Delete</Link>
             </div>
         </div>
     );
