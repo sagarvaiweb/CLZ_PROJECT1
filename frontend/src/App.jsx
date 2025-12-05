@@ -10,6 +10,7 @@ import SignUpPage from './Landing_Page/SignUp/SignUpPage'
 import LoginPage from './Landing_Page/Login/LoginPage'
 import SupportPage from './Landing_Page/Support/SupportPage'
 import ShowPage from './Landing_Page/Show/ShowPage'
+import NewListingPage from './Landing_Page/NewListing/NewListingPage'
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
       <Route path='/login' element={<LoginPage/>} />
       <Route path='/support' element={<SupportPage/>} />
       <Route path='/listings/:id' element={<ShowPage/>} />
+      <Route path='/newlisting'  element={<NewListingPage/>}/>
      </Routes>
     <Footer/>
         

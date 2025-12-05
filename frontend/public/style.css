@@ -274,3 +274,18 @@ i.fa-solid {
   background-color: rgb(166, 41, 41);
   color:white;
 }
+
+/* css for form listing */
+
+.input_div{
+  display:flex;
+  flex-direction: column;
+  margin-top: 1rem;
+ 
+}
+
+.new_listing_input{
+border-radius: 0.5rem;
+border: 1px solid grey;
+padding:0.5rem;
+}
