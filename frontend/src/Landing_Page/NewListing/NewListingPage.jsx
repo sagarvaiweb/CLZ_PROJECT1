@@ -14,7 +14,7 @@ function NewListingPage() {
 
         try{
 
-            let res = await axios.post("http://localhost:3000/listings/create") ;
+            let res = await axios.post("http://localhost:3000/listings/create" , form) ;
             console.log("listing is created successfully", res.data);
         }
         catch(err){
