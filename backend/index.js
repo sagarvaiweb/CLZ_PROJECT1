@@ -76,6 +76,14 @@ app.post("/listings/create" , async(req , res)=>{
     })
 })
 
+// put route for updating listing
+app.put("/listings/:id/update" , async(req , res)=>{
+    const {id} = req.params ;
+    const listingData = {...req.body} ;
+    let  updatedListing = await Listing.findByIdAndUpdate(id ,listingData , {new:true}) ;
+    res.json(updatedListing);
+})
+
 mongoose.connect(URL).then(()=>{
     console.log("mongodb is connected");
     app.listen(PORT , ()=>{
