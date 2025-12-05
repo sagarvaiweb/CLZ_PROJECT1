@@ -57,6 +57,11 @@ app.get("/listings", async(req,res)=>{
     res.json(allListings);
 })
 
+app.get("/listings/:id" , async(req , res)=>{
+    const {id}= req.params ;
+    let listing = await Listing.findById(id) ;
+    res.json(listing);
+})
 
 
 mongoose.connect(URL).then(()=>{
